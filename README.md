@@ -120,3 +120,7 @@ Example response:
   "location": "BROOKLYN"
 }
 ```
+
+
+burnt candle
+https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg"
