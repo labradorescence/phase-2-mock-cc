@@ -13,11 +13,13 @@ function App() {
   }, [])
 
   function removeListing (oldListing) {
-    const newListings = listings.map(listing => listing !== oldListing)
+    const newListings = listings.filter(listing => listing !== oldListing)
     setListings(newListings)
   }
 
   const listingsDisplayed = listings.filter(listing => listing.description && listing.description.toLowerCase().match(searchTerm.toLowerCase()))
+
+  console.log(listingsDisplayed)
 
   return (
     <div className="app">
