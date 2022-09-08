@@ -1,5 +1,6 @@
 import React, { useState, useEffect }  from "react";
 import ListingCard from "./ListingCard";
+import Form from "./Form"
 const listingUrl = "http://localhost:6001/listings"
 
 function ListingsContainer({search}) {
@@ -17,6 +18,10 @@ function ListingsContainer({search}) {
     setListings(listingsAfterDelete)
   }
 
+  function onAddListing(newListing){
+    setListings([...listings, newListing])
+  }
+
   const eachListing = listings
     .filter((listing) => listing.description.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => {
@@ -30,6 +35,7 @@ function ListingsContainer({search}) {
 
   return (
     <main>
+      <Form listingUrl={listingUrl} onAddListing={onAddListing} />
       <ul className="cards">
         {eachListing}
       </ul>

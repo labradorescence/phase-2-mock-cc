@@ -7,12 +7,6 @@
       "location": "Greenpoint"
     },
     {
-      "id": 6,
-      "description": "Beautiful couch",
-      "image": "./images/couch.jpg",
-      "location": "Bay Ridge"
-    },
-    {
       "id": 7,
       "description": "Treadmill Parts For Free",
       "image": "./images/treadmill.jpg",
@@ -53,6 +47,42 @@
       "image": "img",
       "location": "loc",
       "id": 6
+    },
+    {
+      "description": "half burnt candle",
+      "image": "https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg",
+      "location": "Bedstuy",
+      "id": 8
+    },
+    {
+      "description": "half burnt candle",
+      "image": "https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg",
+      "location": "BedStuy",
+      "id": 9
+    },
+    {
+      "description": "half burnt candle",
+      "image": "https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg",
+      "location": "BedStuy",
+      "id": 10
+    },
+    {
+      "description": "half burnt candle",
+      "image": "https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg",
+      "location": "BedStuy",
+      "id": 11
+    },
+    {
+      "description": "half burnt candle",
+      "image": "https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg",
+      "location": "BedStuy",
+      "id": 12
+    },
+    {
+      "description": "half burnt candle",
+      "image": "https://i.pinimg.com/originals/6d/f5/8e/6df58ed0dad8baf71d51d7e692118524.jpg",
+      "location": "BedStuy",
+      "id": 13
     }
   ]
 }
