@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Search() {
+  const[formdata,setFormData]=useState(null)
+  function handChange(e){
+setFormData({...formdata,[e.target.name]:e.target.value})
+}
+
+
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("submitted");
+    fetch("http://localhost:6001/listings",{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify(formdata)
+    })
+    .then(res=>res.json)
+    .then(setFormData)
   }
 
+  
   return (
-    <form className="searchbar" onSubmit={handleSubmit}>
+    <form onChange={handChange} className="searchbar" onSubmit={handleSubmit}>
       <input
         type="text"
         id="search"
         placeholder="search free stuff"
-        value={""}
-        onChange={(e) => console.log(e.target.value)}
+        // value={""}
+      
       />
       <button type="submit">🔍</button>
     </form>
